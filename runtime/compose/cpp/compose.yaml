@@ -1,0 +1,8 @@
+name: info-c
+
+services:
+  web:
+    image: wyga/info-c:latest
+    restart: unless-stopped
+    labels:
+      - "expose.vhost=cpp"

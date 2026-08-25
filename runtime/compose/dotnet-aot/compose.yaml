@@ -1,0 +1,8 @@
+name: info-dotnet-aot
+
+services:
+  web:
+    image: wyga/info-dotnet-aot:latest
+    restart: unless-stopped
+    labels:
+      - "expose.vhost=dotnet-aot"

@@ -1,0 +1,8 @@
+name: info-java
+
+services:
+  web:
+    image: wyga/info-java:latest
+    restart: unless-stopped
+    labels:
+      - "expose.vhost=java"

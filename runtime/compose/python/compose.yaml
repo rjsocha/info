@@ -1,0 +1,8 @@
+name: info-python
+
+services:
+  web:
+    image: wyga/info-python:latest
+    restart: unless-stopped
+    labels:
+      - "expose.vhost=python"

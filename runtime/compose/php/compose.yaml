@@ -1,0 +1,8 @@
+name: info-php
+
+services:
+  web:
+    image: wyga/info-php:latest
+    restart: unless-stopped
+    labels:
+      - "expose.vhost=php"

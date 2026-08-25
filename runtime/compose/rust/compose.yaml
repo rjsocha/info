@@ -1,0 +1,8 @@
+name: info-rust
+
+services:
+  web:
+    image: wyga/info-rust:latest
+    restart: unless-stopped
+    labels:
+      - "expose.vhost=rust"

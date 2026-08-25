@@ -1,0 +1,8 @@
+name: info-go
+
+services:
+  web:
+    image: wyga/info-go:latest
+    restart: unless-stopped
+    labels:
+      - "expose.vhost=go"
